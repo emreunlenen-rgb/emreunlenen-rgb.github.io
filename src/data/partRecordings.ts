@@ -47,7 +47,7 @@ export const teacherPartRecordings: PiecePartRecordings[] = [
     id: 'hoca-villa-lobos',
     title: 'Heitor Villa-Lobos – Gavotte-Choro (3 gitar)',
     slots: [
-      { partLabel: '1. gitar', performer: 'Anıl Gelenler', youtubeUrl: 'https://www.youtube.com/shorts/ckpfsVY9iy0' },
+      { partLabel: '1. gitar', performer: undefined, youtubeUrl: null },
       { partLabel: '2. gitar', performer: 'Duru Yavuşan', youtubeUrl: 'https://www.youtube.com/watch?v=TuzHSCKYWuw' },
       { partLabel: '3. gitar', performer: 'Caner Yiğiter', youtubeUrl: 'https://www.youtube.com/watch?v=CwbHgWlBiJ8' },
     ],
@@ -58,8 +58,8 @@ export const teacherPartRecordings: PiecePartRecordings[] = [
     slots: [
       {
         partLabel: '1. gitar',
-        performer: 'Anıl Gelenler',
-        youtubeUrl: 'https://www.youtube.com/playlist?list=PLKf3vq4uuvsVyVNjWDh3LmLRjpPtENB_l',
+        performer: undefined,
+        youtubeUrl: null,
       },
       { partLabel: '2. gitar', performer: 'Duru Yavuşan', youtubeUrl: 'https://www.youtube.com/watch?v=7UkGkSTA_q4' },
       { partLabel: '3. gitar', performer: 'Caner Yiğiter', youtubeUrl: 'https://www.youtube.com/watch?v=wcqiocdLOTM' },
@@ -71,8 +71,8 @@ export const teacherPartRecordings: PiecePartRecordings[] = [
     slots: [
       {
         partLabel: '1. gitar',
-        performer: 'Anıl Gelenler',
-        youtubeUrl: 'https://www.youtube.com/playlist?list=PLGPR8eIu9N_whI7XjatBgkj0GS2s_zBbZ',
+        performer: undefined,
+        youtubeUrl: null,
       },
       { partLabel: '2. gitar', performer: 'Duru Yavuşan', youtubeUrl: 'https://www.youtube.com/watch?v=U-KUgbCdgUA' },
       { partLabel: '3. gitar', performer: 'Caner Yiğiter', youtubeUrl: 'https://www.youtube.com/watch?v=JrhrWk2Vc8c' },
