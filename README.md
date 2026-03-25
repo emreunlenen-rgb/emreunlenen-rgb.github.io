@@ -1,4 +1,4 @@
-# 3. Anadolu Üniversitesi Gitar Şenliği
+# III. Anadolu Üniversitesi Gitar Şenliği
 
 27 Nisan 2026 • Eskişehir
 
@@ -10,7 +10,7 @@ Klasik gitar sanatının eğitimle buluştuğu akademik bir etkinliğin web site
 
 - **React 19** + **TypeScript**
 - **Vite 8** (build aracı)
-- **Tailwind CSS v4** (stil)
+- **Tailwind CSS v4** (stil; tipografi: Outfit + Source Sans 3)
 - **React Router** (HashRouter — GitHub Pages uyumlu)
 - **Lucide React** (ikonlar)
 - **clsx**

@@ -13,7 +13,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-white/60">
-              3. Anadolu Üniversitesi Gitar Şenliği, klasik gitar eğitimi ve sanatını bir araya
+              III. Anadolu Üniversitesi Gitar Şenliği, klasik gitar eğitimi ve sanatını bir araya
               getiren akademik bir etkinliktir.
             </p>
           </div>
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/40">
           <p>© 2026 Anadolu Üniversitesi Devlet Konservatuvarı. Tüm hakları saklıdır.</p>
-          <p>3. Anadolu Üniversitesi Gitar Şenliği</p>
+          <p>III. Anadolu Üniversitesi Gitar Şenliği</p>
         </div>
       </div>
     </footer>

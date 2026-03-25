@@ -14,7 +14,7 @@ export const faqItems: FaqItem[] = [
   {
     question: 'Şenliğe nasıl katılabilirim?',
     answer:
-      '3. Anadolu Üniversitesi Gitar Şenliği\'ne katılım için Anadolu Üniversitesi Devlet Konservatuvarı ile iletişime geçebilirsiniz. Etkinlik detayları ve başvuru bilgileri bu web sitesinde düzenli olarak güncellenmektedir.',
+      'III. Anadolu Üniversitesi Gitar Şenliği\'ne katılım için Anadolu Üniversitesi Devlet Konservatuvarı ile iletişime geçebilirsiniz. Etkinlik detayları ve başvuru bilgileri bu web sitesinde düzenli olarak güncellenmektedir.',
   },
   {
     question: 'Videolar ne kadar süreyle erişilebilir olacak?',

@@ -39,7 +39,7 @@ export default function AboutSection() {
             Gitar Sanatını Eğitimle Buluşturuyoruz
           </h2>
           <p className="text-stone-500 leading-relaxed">
-            Anadolu Üniversitesi Gitar Şenliği, Türkiye'nin dört bir yanından gitar eğitmenleri ve
+            III. Anadolu Üniversitesi Gitar Şenliği, Türkiye'nin dört bir yanından gitar eğitmenleri ve
             öğrencileri bir araya getiren, klasik gitar sanatının gelişimine katkı sağlayan
             akademik bir etkinliktir. Şenlik kapsamında düzenlenen konserler, atölye çalışmaları
             ve eğitim programları ile katılımcılar müzikal ufuklarını genişletme fırsatı bulur.
