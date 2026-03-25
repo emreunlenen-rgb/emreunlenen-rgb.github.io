@@ -5,6 +5,8 @@ import AboutSection from '../sections/AboutSection';
 import GallerySection from '../sections/GallerySection';
 import FeaturedVideoSection from '../sections/FeaturedVideoSection';
 import VideosSection from '../sections/VideosSection';
+import OrchestraSeatingSection from '../sections/OrchestraSeatingSection';
+import PartRecordingsSection from '../sections/PartRecordingsSection';
 import FaqSection from '../sections/FaqSection';
 
 export default function HomePage() {
@@ -17,6 +19,8 @@ export default function HomePage() {
         <GallerySection />
         <FeaturedVideoSection />
         <VideosSection />
+        <OrchestraSeatingSection />
+        <PartRecordingsSection />
         <FaqSection />
       </main>
       <Footer />
