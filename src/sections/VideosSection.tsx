@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Users, GraduationCap } from 'lucide-react';
 import { getVideosByCategory } from '../data/videos';
+import { studentPartRecordings } from '../data/partRecordings';
 import VideoCard from '../components/VideoCard';
+import PartRecordingPieceBlock from '../components/PartRecordingPieceBlock';
 
 type Tab = 'student' | 'teacher';
 
@@ -11,14 +13,14 @@ const TABS = [
     label: 'Öğrenci Gitar Orkestrası',
     icon: Users,
     description:
-      'Öğrenci gitar orkestrası üyeleri için hazırlanmış teknik çalışma videoları ve orkestra eseri rehberleri.',
+      'Her eser için 1.–4. gitar partileri: çalışma ve prova kayıtları eser başlığı altında gruplanmıştır.',
   },
   {
     id: 'teacher' as Tab,
     label: 'GSL Gitar Eğitmenleri Orkestrası',
     icon: GraduationCap,
     description:
-      'Eğitmen orkestrası parti kayıtları «Parti kayıtları» bölümünde. Buraya genel eğitim videoları eklendiğinde listelenecektir.',
+      'Eğitmen orkestrası parti kayıtları aşağıdaki «Parti kayıtları» bölümündedir. Bu sekmede ek genel videolar listelenebilir.',
   },
 ];
 
@@ -43,7 +45,6 @@ export default function VideosSection() {
           </p>
         </div>
 
-        {/* Tab selector */}
         <div className="flex flex-col sm:flex-row gap-3 mb-10 max-w-2xl mx-auto">
           {TABS.map((tab) => (
             <button
@@ -61,22 +62,42 @@ export default function VideosSection() {
           ))}
         </div>
 
-        {/* Tab description */}
         <div className="text-center mb-10">
           <p className="text-sm text-stone-500 max-w-xl mx-auto">{activeTabData.description}</p>
         </div>
 
-        {/* Video cards */}
-        <div className="space-y-10">
-          {filteredVideos.map((video) => (
-            <VideoCard key={video.id} video={video} />
-          ))}
-        </div>
-
-        {filteredVideos.length === 0 && (
-          <div className="text-center py-16">
-            <p className="text-stone-400">Bu kategori için henüz video eklenmemiş.</p>
+        {activeTab === 'student' ? (
+          <div className="space-y-10">
+            {studentPartRecordings.map((piece) => (
+              <PartRecordingPieceBlock key={piece.id} piece={piece} />
+            ))}
           </div>
+        ) : (
+          <>
+            <div className="space-y-10">
+              {filteredVideos.map((video) => (
+                <VideoCard key={video.id} video={video} />
+              ))}
+            </div>
+            {filteredVideos.length === 0 && (
+              <div className="text-center py-16 rounded-2xl border border-dashed border-stone-200 bg-white/60">
+                <p className="text-stone-500 mb-2">Bu sekmede henüz ayrı video kartı yok.</p>
+                <p className="text-sm text-stone-400">
+                  Eğitmen parti kayıtları için sayfada{' '}
+                  <button
+                    type="button"
+                    onClick={() =>
+                      document.getElementById('parti-kayitlari')?.scrollIntoView({ behavior: 'smooth' })
+                    }
+                    className="text-wine-700 font-medium underline-offset-2 hover:underline"
+                  >
+                    Parti kayıtları
+                  </button>{' '}
+                  bölümüne gidin.
+                </p>
+              </div>
+            )}
+          </>
         )}
       </div>
     </section>
