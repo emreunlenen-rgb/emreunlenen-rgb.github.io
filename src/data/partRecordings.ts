@@ -15,7 +15,11 @@ export const studentPartRecordings: PiecePartRecordings[] = [
     id: 'ogr-granados',
     title: 'Enrique Granados – Spanish Dance No. 2 (3 gitar)',
     slots: [
-      { partLabel: '1. gitar', performer: undefined, youtubeUrl: null },
+      {
+        partLabel: '1. gitar',
+        performer: undefined,
+        youtubeUrl: 'https://www.youtube.com/watch?v=NjJtOs7wxsY',
+      },
       { partLabel: '2. gitar', performer: 'Tarık', youtubeUrl: 'https://www.youtube.com/watch?v=u227-p9D3tM' },
       { partLabel: '3. gitar', performer: 'Baturhan', youtubeUrl: 'https://www.youtube.com/watch?v=04EqXZInioQ' },
     ],
