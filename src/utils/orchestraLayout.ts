@@ -1,12 +1,8 @@
-/** Şefe en yakın sıra 2 kişi; her sıra biraz genişleyerek arkaya doğru yayılır. */
-export function namesToFanRows(names: readonly string[]): string[][] {
+/** Listede soldan sağa / üstten aşağı ilerleyiş: her sıra en fazla 2 isim (son sırada tek kalabilir). */
+export function namesToPairRows(names: readonly string[]): string[][] {
   const rows: string[][] = [];
-  let idx = 0;
-  let rowCap = 2;
-  while (idx < names.length) {
-    rows.push(names.slice(idx, idx + rowCap));
-    idx += rowCap;
-    rowCap += 1;
+  for (let i = 0; i < names.length; i += 2) {
+    rows.push(names.slice(i, i + 2));
   }
   return rows;
 }

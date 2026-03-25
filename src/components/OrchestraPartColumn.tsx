@@ -1,12 +1,20 @@
-import { namesToFanRows } from '../utils/orchestraLayout';
+import { namesToPairRows } from '../utils/orchestraLayout';
 
 interface OrchestraPartColumnProps {
   label: string;
   names: readonly string[];
 }
 
+function SeatCell({ name }: { name: string }) {
+  return (
+    <div className="rounded-lg bg-white/90 border border-wine-200/80 shadow-sm px-2.5 py-2.5 text-center text-xs sm:text-sm text-stone-800 min-h-[3rem] flex items-center justify-center leading-snug w-full max-w-[160px]">
+      {name}
+    </div>
+  );
+}
+
 export default function OrchestraPartColumn({ label, names }: OrchestraPartColumnProps) {
-  const rows = namesToFanRows([...names]);
+  const rows = namesToPairRows([...names]);
   const backToFront = [...rows].reverse();
 
   return (
@@ -18,17 +26,15 @@ export default function OrchestraPartColumn({ label, names }: OrchestraPartColum
         {backToFront.map((row, ri) => (
           <div
             key={ri}
-            className="flex flex-wrap justify-center gap-2"
-            style={{ gap: '0.5rem' }}
+            className="grid grid-cols-2 gap-2 w-full max-w-[340px] mx-auto justify-items-stretch"
           >
-            {row.map((name, si) => (
-              <div
-                key={`${label}-${ri}-${si}`}
-                className="rounded-lg bg-white/90 border border-wine-200/80 shadow-sm px-2.5 py-2 text-center text-xs sm:text-sm text-stone-800 max-w-[140px] min-w-[72px] leading-snug"
-              >
-                {name}
+            {row.length === 2 ? (
+              row.map((name, si) => <SeatCell key={`${label}-${ri}-${si}`} name={name} />)
+            ) : (
+              <div className="col-span-2 flex justify-center">
+                <SeatCell name={row[0]!} />
               </div>
-            ))}
+            )}
           </div>
         ))}
       </div>

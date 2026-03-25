@@ -1,10 +1,12 @@
 /**
- * Öğrenci gitar orkestrası oturma listesi (PDF: Üç / Dört gitar partili eserler).
- * Yalnızca isimler; şefe bakan ön sıralar dar, arkaya doğru genişleyen düzen için sıra sıra kullanılır.
+ * Öğrenci gitar orkestrası oturma listesi (PDF).
+ *
+ * Oturma görseli: 1.–3. partiler **üç gitarlı eser listesine** göredir.
+ * Dört gitarlı eserlerde yalnızca **4. parti** ayrı sütunda gösterilir (liste farkı burada).
  */
 
 export const seatingThreeGuitar = {
-  title: 'Üç gitar partili eserler',
+  title: 'Birinci üç parti (üç ve dört gitarlı eserler için esas)',
   parts: [
     {
       label: '1. Parti',
@@ -61,65 +63,17 @@ export const seatingThreeGuitar = {
   ],
 } as const;
 
-export const seatingFourGuitar = {
-  title: 'Dört gitar partili eserler',
-  parts: [
-    {
-      label: '1. Parti',
-      names: [
-        'Eylül Uğur',
-        'Dilan Sayalı',
-        'Efe Eren Çakır',
-        'Deniz Büyükkaya',
-        'İrem Demirci',
-        'Batuhan Taştan',
-        'Berkay Taha Kaygısız',
-        'Emre Berat Keleş',
-        'Zeynep Taştekin',
-      ],
-    },
-    {
-      label: '2. Parti',
-      names: [
-        'Kadriye Nur Sunal',
-        'Didem Gül Öztürk',
-        'Deniz Çelik',
-        'Sinem Yıldız',
-        'Aybars Ekşioğlu',
-        'Zeynep Ece Çoban',
-        'Ege Kayrancı',
-        'Eflanur İşkan',
-        'Ali Efe Kardaş',
-        'Toprak',
-        'Arda Arkın',
-      ],
-    },
-    {
-      label: '3. Parti',
-      names: [
-        'Sıla Horata',
-        'Utkan Demir Ayaz',
-        'Esma Yılmaz',
-        'Toprak Gügül',
-        'Muhammed Y. Dik',
-        'Umut S. Şengezer',
-        'Yağmur',
-        'İrem Günay',
-        'Azra Gezer',
-        'Ayşe Derin Koçak',
-      ],
-    },
-    {
-      label: '4. Parti',
-      names: [
-        'Arda Öksüz',
-        'Nehir Demiç',
-        'Nidanur Özlevbaş',
-        'Yasin Altay',
-        'Kuzey Akkurt',
-        'Masal',
-        'Nehir',
-      ],
-    },
+/** Yalnızca dört gitarlı eserlerde kullanılan 4. parti sırası (PDF dört gitar listesi). */
+export const seatingFourthPartOnly = {
+  label: '4. Parti',
+  description: 'Yalnızca dört gitar partili eserlerde geçerlidir.',
+  names: [
+    'Arda Öksüz',
+    'Nehir Demiç',
+    'Nidanur Özlevbaş',
+    'Yasin Altay',
+    'Kuzey Akkurt',
+    'Masal',
+    'Nehir',
   ],
 } as const;
