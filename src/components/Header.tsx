@@ -8,7 +8,6 @@ const NAV_LINKS = [
   { id: 'galeri', label: 'Galeri' },
   { id: 'videolar', label: 'Eğitim Videoları' },
   { id: 'oturus', label: 'Oturma planı' },
-  { id: 'parti-kayitlari', label: 'Parti kayıtları' },
   { id: 'sss', label: 'SSS' },
   { id: 'iletisim', label: 'İletişim' },
 ];

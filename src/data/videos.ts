@@ -9,12 +9,10 @@ export const featuredVideo: FeaturedVideo = {
     'Geçen yılki şenlikten öne çıkan orkestra performans kaydı. Bu video, şenliğin müzikal atmosferini ve orkestra çalışmalarının kalitesini yansıtmaktadır.',
 };
 
-// ─── Eğitim Videoları (GSL sekmesi) ───────────────────────────────
+// ─── Ek eğitim videoları (isteğe bağlı) ───────────────────────────
 //
-// Öğrenci orkestrası: «Şenliğe Hazırlık Videoları» sekmesinde parti kayıtları
-// (src/data/partRecordings.ts → studentPartRecordings) gösterilir.
-//
-// Buraya yalnızca teacher kategorisinde ek kartlar için giriş ekleyin.
+// Öğrenci ve eğitmen parti kayıtları: VideosSection + partRecordings.ts
+// Buraya category: 'student' | 'teacher' ile ek VideoCard satırları eklenebilir.
 
 export const videos: Video[] = [];
 
