@@ -11,20 +11,12 @@ export const featuredVideo: FeaturedVideo = {
 
 // ─── Eğitim Videoları ─────────────────────────────────────────────
 //
-// ✅  = Kesinleşmiş eğitim videosu
-// ⏳  = Geçici (placeholder) — gerçek eğitim videosu hazır olduğunda değiştirilecek
-//       Geçici videolar Emre Ünlenen kanalından doğrulanmış performans kayıtlarıdır.
-//
-// Yeni video eklemek için: id, title, description, youtubeUrl, category, orderIndex girin.
+// Yeni video: id, title, description, youtubeUrl, category, orderIndex
 // category: 'student' | 'teacher'
+//
+// GSL eğitmen orkestrası parti kayıtları: ana sayfada «Parti kayıtları» bölümünde.
 
 export const videos: Video[] = [
-
-  // ═══════════════════════════════════════════════════════════════
-  //  ÖĞRENCİ GİTAR ORKESTRASI
-  // ═══════════════════════════════════════════════════════════════
-
-  // ✅ Kesinleşmiş
   {
     id: 'student-1',
     title: 'Roland Dyens – O Trio Magico (1. Gitar)',
@@ -34,8 +26,6 @@ export const videos: Video[] = [
     category: 'student',
     orderIndex: 1,
   },
-
-  // ✅ Kesinleşmiş
   {
     id: 'student-2',
     title: 'Enrique Granados – Spanish Dance Nr. 2 (1. Gitar)',
@@ -43,43 +33,6 @@ export const videos: Video[] = [
       'Granados\'un İspanyol Dansı Nr. 2 eserinin 1. gitar partisi için hazırlanmış detaylı çalışma videosu.',
     youtubeUrl: 'https://www.youtube.com/watch?v=qoSIOdhaf54',
     category: 'student',
-    orderIndex: 2,
-  },
-
-  // ⏳ Geçici — gerçek eğitim videosu ile değiştirilecek
-  {
-    id: 'student-3',
-    title: 'Roland Dyens – Libra Sonatine I: India',
-    description:
-      'Geçici içerik · Dyens\'in Libra Sonatine süitinden India bölümü. Ritmik yapı ve müzikal ifade çalışması için referans kayıt.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=wQHl4bOS3WI',
-    category: 'student',
-    orderIndex: 3,
-  },
-
-  // ═══════════════════════════════════════════════════════════════
-  //  GÜZEL SANATLAR LİSELERİ GİTAR EĞİTMENLERİ ORKESTRASI
-  // ═══════════════════════════════════════════════════════════════
-
-  // ⏳ Geçici — gerçek eğitim videosu ile değiştirilecek
-  {
-    id: 'teacher-1',
-    title: 'Astor Piazzolla – Oblivion (Düz. Roland Dyens)',
-    description:
-      'Geçici içerik · Piazzolla\'nın Oblivion eserinin Dyens düzenlemesi. Yorumlama, ton rengi ve müzikal ifade üzerine referans performans.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=ZTOnLcZchrU',
-    category: 'teacher',
-    orderIndex: 1,
-  },
-
-  // ⏳ Geçici — gerçek eğitim videosu ile değiştirilecek
-  {
-    id: 'teacher-2',
-    title: 'Turgay Erdener – Gitar Sonatı: I. Bölüm (Allegro Giocoso)',
-    description:
-      'Geçici içerik · Çağdaş Türk bestecisi Turgay Erdener\'in Gitar Sonatı\'nın birinci bölümü. Çağdaş Türk gitar müziği örneği.',
-    youtubeUrl: 'https://www.youtube.com/watch?v=oe-YeYYQZmk',
-    category: 'teacher',
     orderIndex: 2,
   },
 ];

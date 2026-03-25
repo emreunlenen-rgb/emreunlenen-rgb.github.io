@@ -18,7 +18,7 @@ const TABS = [
     label: 'GSL Gitar Eğitmenleri Orkestrası',
     icon: GraduationCap,
     description:
-      'Güzel Sanatlar Liseleri gitar eğitmenleri orkestrası için orkestra yönetimi ve ileri düzey ensemble teknikleri.',
+      'Eğitmen orkestrası parti kayıtları «Parti kayıtları» bölümünde. Buraya genel eğitim videoları eklendiğinde listelenecektir.',
   },
 ];
 
