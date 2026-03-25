@@ -1,6 +1,7 @@
+-- ARŞİV: Web sitesinde yorum sistemi kaldırıldı; bu dosya yalnızca referans içindir.
 -- ============================================
 -- 3. Anadolu Üniversitesi Gitar Şenliği
--- Supabase Veritabanı Şeması
+-- Supabase Veritabanı Şeması (kullanılmıyor)
 -- ============================================
 
 -- Yorumlar tablosu
